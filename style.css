@@ -1,6 +1,5 @@
 .title {
   font-weight: 600;
-
   line-height: 28px;
 }
 
@@ -66,8 +65,8 @@ a {
   position: relative;
   height: 6715px;
   width: 375px;
-  background-color: #ffffff;
-  font-family: "Inter";
+  background-color: #fff;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   color: #172b4d;
 }
