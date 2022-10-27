@@ -52,6 +52,77 @@ a {
   color: #172b4d;
 }
 
+.grid-container {
+  display: grid;
+  gap: 16px;
+  margin: 20px 25px;
+}
+
+.grid-items {
+  width: 320px;
+  height: 474px;
+  background-color: #ebf0ee;
+  border: #cfd0d1 solid 1px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.description {
+  height: 225px;
+  margin-top: 249px;
+  border-radius: 8px 8px 8px 8px;
+  background: #fff;
+}
+
+.new {
+  color: #3a4a42;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.btn-btn {
+  height: 35px;
+  font-size: 15px;
+  border-radius: 4px 4px 4px 4px;
+  margin: 3px;
+  margin-top: 10px;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border: none;
+}
+
+.btn {
+  margin-top: 15px;
+  height: 50px;
+  width: 128px;
+  background: #36b37f;
+  border-radius: 6px 6px 6px 6px;
+  border: none;
+  display: flex;
+  color: #fff;
+  font-size: 19px;
+  margin-left: 100px;
+  padding-top: 12px;
+  padding-left: 13px;
+}
+
+.p-lang {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-tag {
+  font-weight: 700;
+  font-size: 25px;
+  width: 200px;
+  text-align: center;
+  margin-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 #tool-bar {
   display: flex;
   justify-content: space-between;
@@ -59,6 +130,8 @@ a {
   color: #28352f;
   padding-left: 26px;
   padding-right: 30px;
+  padding-bottom: 40px;
+  padding-top: 15px;
 }
 
 #body {
