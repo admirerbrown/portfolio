@@ -8,31 +8,33 @@ A personal portfolio site of to showcase my skills and what i am capable of to p
 
 ## Built With
 
--Html, Css
+- Html, Css
 
-## $Getting Started
+## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+## Prerequisites
 
-- a computer running any operating system.
+- A computer running any operating system.
 - an internet connection
-- knowledge of basic git commands
+- Have Git installed
+- A modern browser eg. Google Chrome
+- Knowledge of basic git commands
 
-### Setup
+## Setup
 
 - link your computer to github
 - clone the repository
 - open the file in your code editor
 - set up Html and css linters for the project
 
-### Install
+## Install
 
 - install node_models and project dependencies
 - ensure there are no errors
 
-### Usage
+## Usage
 
 - run the project to ensure there are no linter errors
 - open index.html in your browser of choice
@@ -46,7 +48,7 @@ GitHub: @admirerbrown
 Twitter: @brown_admirer
 LinkedIn: Samuel Ntow kyere
 
-## handshake Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -54,7 +56,7 @@ Contributions, issues, and feature requests are welcome!
 
 - Hat tip to Microverse for providing the resources that enabled me to do this work
 
-## memo License
+## License
 
 MIT License
 

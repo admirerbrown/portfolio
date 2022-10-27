@@ -4,13 +4,13 @@
 }
 
 .headline-image {
-  background: url(/images/header-illsutration-mobile.svg);
+  background: url(images/header-illsutration-mobile.svg);
   height: 648px;
 }
 
 .headline-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 25px;
   width: 327px;
   height: 164px;
   text-align: center;
