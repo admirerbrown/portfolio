@@ -1,3 +1,9 @@
+@media (min-width: 600px) {
+  main {
+    flex-wrap: nowrap;
+  }
+}
+
 .title {
   font-weight: 600;
   line-height: 28px;
@@ -143,7 +149,6 @@ a {
 
 .about-li {
   display: flex;
-  padding: 0;
   justify-content: space-between;
 }
 
@@ -155,7 +160,7 @@ a {
 }
 
 .ab-text {
-  font-size: 20px;
+  font-size: 21px;
   line-height: 28px;
   text-align: center;
   font-weight: 400;
@@ -180,11 +185,20 @@ a {
   justify-content: center;
 }
 
+.card-flex {
+  width: 320px;
+  height: 474px;
+  background-color: #ebf0ee;
+  border: #cfd0d1 solid 1px;
+  border-radius: 8px 8px 8px 8px;
+}
+
 .ab-btn-btn {
-  margin-right: 115px;
+  margin-right: 90px;
   width: 160px;
   margin-left: 0;
-  padding-left: 15px;
+  padding-left: 10px;
+  margin-bottom: 12px;
 }
 
 .ab-lang {
@@ -202,6 +216,14 @@ a {
   margin-top: 10px;
   padding-top: 0;
   color: #344563;
+}
+
+.ab-head {
+  margin-top: 60px;
+  padding-top: 0;
+  color: #344563;
+  font-size: 40px;
+  margin-left: 100px;
 }
 
 .ab-img {
@@ -305,5 +327,4 @@ textarea {
   font-family: "Inter", sans-serif;
   font-style: normal;
   color: #172b4d;
-  border: solid;
 }
