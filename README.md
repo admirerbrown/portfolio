@@ -42,7 +42,7 @@ To get a local copy up and running follow these simple steps.
 
 ## Author
 
-bust_in_silhouette Samuel Kyere
+Samuel Kyere
 
 GitHub: @admirerbrown
 Twitter: @brown_admirer
