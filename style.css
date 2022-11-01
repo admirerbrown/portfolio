@@ -242,10 +242,16 @@ a {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+  margin-right: 25px;
 }
 
 .ab-form {
   margin-left: 25px;
+}
+
+#abt-contact {
+display: flex;
+flex-direction: column;
 }
 
 input[type="text"] {
