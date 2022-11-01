@@ -242,10 +242,16 @@ a {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+  margin-right: 25px;
 }
 
 .ab-form {
   margin-left: 25px;
+}
+
+#abt-contact {
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="text"] {
@@ -279,7 +285,7 @@ input[type="submit"] {
 }
 
 .footer-img {
-  margin-left: 90px;
+  margin-left: 70px;
   margin-bottom: 150px;
 }
 
@@ -289,7 +295,7 @@ input[type="submit"] {
 
 .ab-soc {
   font-size: 25px;
-  margin-right: 12px;
+  margin-right: 40px;
   color: #42526e;
 }
 
