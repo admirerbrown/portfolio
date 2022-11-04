@@ -77,7 +77,6 @@
 
   .headline-button {
     padding-top: 35px;
-    /* display: flex; */
     padding-top: 50px;
     margin-left: 100px;
   }
@@ -262,11 +261,6 @@
     justify-content: center;
   }
 
-  .final {
-    display: flex;
-    justify-content: center;
-  }
-
   .contact-me {
     margin-top: 100px;
     margin-right: 25px;
@@ -315,7 +309,6 @@
     width: 150px;
     border-radius: 6px 6px 6px 6px;
     border: #cfd0d1 solid 1px;
-
     font-size: 1rem;
     padding-left: 165px;
   }
@@ -327,7 +320,7 @@
 
   .footer {
     display: flex;
-    height: 0px;
+    height: 0;
   }
 
   .send {
