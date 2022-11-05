@@ -22,7 +22,7 @@ input[type="text"]:focus {
 
 @media (min-width: 768px) {
   .body {
-    font-family: Helvetica, Arial, Verdana, Tahoma;
+    font-family: "Inter", sans-serif;
     font-style: normal;
   }
 
