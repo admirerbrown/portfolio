@@ -22,7 +22,7 @@ input[type=text]:focus {
 
 @media (min-width: 768px) {
   .body {
-    font-family: "Inter";
+    font-family: "Inter san-serif";
     font-style: normal;
   }
 
@@ -31,6 +31,7 @@ input[type=text]:focus {
     height: 756px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 0;
   }
 
   .mobile-nav {
@@ -105,19 +106,11 @@ input[type=text]:focus {
   .headline-button {
     display: flex;
     padding-top: 20px;
-    margin-left: 250px
-  }
-
-  .prologue {
-    margin-top: 50px;
+    margin-left: 250px;
   }
 
   .list {
     list-style: none;
-  }
-
-  .headline {
-    margin-bottom: 0;
   }
 
   /* ************************ section One Above **************** */
@@ -319,10 +312,7 @@ input[type=text]:focus {
   .prologue {
     padding-left: 100px;
     height: 1434.3px;
-  }
-
-  .mob-img {
-    display: none;
+    margin-top: 20px;
   }
 
   .contact-me {
@@ -351,7 +341,6 @@ input[type=text]:focus {
     margin-top: 0;
     width: 684px;
     margin-left: 25px;
-
   }
 
   input[type="text"] {
@@ -405,8 +394,6 @@ input[type=text]:focus {
     padding-top: 14px;
     padding-left: 13px;
   }
-
-
 
   .left-img {
     margin-left: 452px;
