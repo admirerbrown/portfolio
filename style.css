@@ -9,6 +9,9 @@ input[type=text]:focus {
 
 .btn:hover {
   background: #36b37e;
+  transform: scale(1.2);
+  transition-duration: 2s;
+  opacity: 100%;
 }
 
 .btn:active {
