@@ -7,6 +7,20 @@ input[type="text"]:focus {
   background: #008552;
 }
 
+.resume:active {
+  background: #36b37e;
+  transform: scale(1.2);
+  transition-duration: 2s;
+  opacity: 100%;
+}
+
+.send:hover {
+  background: #36b37e;
+  transform: scale(1.2);
+  transition-duration: 2s;
+  opacity: 100%;
+}
+
 .btn:hover {
   background: #36b37e;
   transform: scale(1.2);
@@ -29,7 +43,7 @@ input[type="text"]:focus {
   .headline {
     background-image: url(images/Header-llustration-desktop.svg);
     height: 756px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 0;
   }
@@ -43,6 +57,12 @@ input[type="text"]:focus {
     justify-content: center;
     color: #344563;
     padding-top: 2em;
+  }
+
+  .prologue {
+    padding-left: 100px;
+    height: 1434.3px;
+    margin-top: 30px;
   }
 
   .nav-item {
@@ -76,19 +96,13 @@ input[type="text"]:focus {
     font-size: 20px;
     line-height: 35px;
     color: #172b4d;
-    margin-left: 100px;
-    padding-right: 250px;
   }
 
   .intro-text {
-    width: 920px;
-    height: 96px;
+    width: 50%;
     display: flex;
     justify-content: center;
-  }
-
-  .sec1-social {
-    display: flex;
+    margin: auto;
   }
 
   .social-links {
@@ -96,7 +110,7 @@ input[type="text"]:focus {
     padding-top: 30px;
     font-size: 25px;
     gap: 30px;
-    margin-left: 300px;
+    justify-content: center;
   }
 
   a {
@@ -106,7 +120,7 @@ input[type="text"]:focus {
   .headline-button {
     display: flex;
     padding-top: 20px;
-    margin-left: 250px;
+    justify-content: center;
   }
 
   .list {
@@ -121,6 +135,7 @@ input[type="text"]:focus {
     text-align: center;
     color: #172b4d;
     margin-bottom: 100px;
+    margin-top: 150px;
   }
 
   .high-container {
@@ -202,41 +217,44 @@ input[type="text"]:focus {
     display: none;
   }
 
-  .about {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-
-  .about-li {
-    display: flex;
-    flex-direction: column;
-  }
-
   .ab-head {
-    color: #344563;
+    width: 100%;
+    text-align: center;
     font-size: 40px;
-    margin-left: 80px;
-    margin-left: 200px;
-    margin-top: 10px;
+    color: #172b4d;
+  }
+
+  .about {
+    margin-top: 100px;
+    display: flex;
+  }
+
+  .side1 {
+    margin-bottom: 150px;
   }
 
   .side2 {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .ab-text {
-    font-size: 20px;
-    line-height: 28px;
     text-align: center;
-    font-weight: 400;
-    color: #42526e;
+    font-size: 20px;
+    color: #172b4d;
+  }
+
+  .ab-btn-align {
+    text-align: center;
   }
 
   .resume {
-    width: 200px;
-    margin-left: 200px;
+    width: 20%;
+    height: 60px;
+    color: #fff;
+    background: #36b37e;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 20px;
+    border: none;
   }
 
   .ab-lang {
@@ -268,7 +286,8 @@ input[type="text"]:focus {
   }
 
   .container {
-    margin-left: 70px;
+    display: flex;
+    justify-content: center;
   }
 
   .flex-con {
@@ -309,38 +328,30 @@ input[type="text"]:focus {
 
   /* ************************ section Three Above **************** */
 
-  .prologue {
-    padding-left: 100px;
-    height: 1434.3px;
-    margin-top: 20px;
-  }
-
   .contact-me {
     margin-top: 100px;
   }
 
   .contact-sec {
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
   }
 
   .close {
-    width: 463px;
-    height: 256px;
-    margin-left: 70px;
+    width: 20%;
   }
 
   .closure {
-    display: flex;
     line-height: 38px;
     color: #172b4d;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .ab-form {
     margin-top: 0;
-    width: 684px;
-    margin-left: 25px;
   }
 
   input[type="text"] {
@@ -355,7 +366,7 @@ input[type="text"]:focus {
 
   input[type="email"] {
     height: 2rem;
-    width: 450px;
+    width: 96%;
     margin-bottom: 1rem;
     border-radius: 6px 6px 6px 6px;
     border: #cfd0d1 solid 1px;
@@ -365,7 +376,7 @@ input[type="text"]:focus {
 
   textarea {
     height: 70px;
-    width: 465px;
+    width: 97%;
     border-radius: 6px 6px 6px 6px;
     border: #cfd0d1 solid 1px;
     font-size: 1rem;
@@ -395,8 +406,9 @@ input[type="text"]:focus {
     padding-left: 13px;
   }
 
-  .left-img {
-    margin-left: 452px;
+  .desk-img {
+    display: flex;
+    justify-content: space-between;
   }
 
   .ab-soc {
@@ -412,7 +424,7 @@ input[type="text"]:focus {
 }
 
 /* ****** -----------Mobile version -----------********* */
-@media (max-width: 767px) {
+@media (min-width: 414) {
   .desktop-nav {
     display: none;
   }
@@ -431,8 +443,6 @@ input[type="text"]:focus {
 
   #body {
     position: relative;
-    height: 6715px;
-    width: 375px;
     background-color: #fff;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -582,47 +592,38 @@ input[type="text"]:focus {
 
   /* ******************* section Two Above *********** */
 
-  .ab-btn-btn {
-    margin-right: 90px;
-    width: 160px;
-    margin-left: 0;
-    padding-left: 10px;
-    margin-bottom: 12px;
-  }
-
   .about {
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
+    margin-bottom: 50px;
   }
 
   .about-li {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 25px;
   }
 
   .ab-head {
-    margin-top: 60px;
     color: #344563;
     font-size: 40px;
+    margin-left: 80px;
   }
 
   .side2 {
-    margin-left: 10px;
-  }
-
-  .side1 {
-    margin-right: 70px;
+    margin-top: 150px;
   }
 
   .ab-text {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 28px;
     text-align: center;
     font-weight: 400;
     color: #42526e;
+  }
+
+  .resume {
+    margin-right: 50px;
   }
 
   .ab-lang {
@@ -632,14 +633,8 @@ input[type="text"]:focus {
     margin-left: 25px;
   }
 
-  .ab-img {
-    margin-top: 20px;
-  }
-
-  .ab-title {
-    margin-top: 10px;
-    padding-top: 0;
-    color: #344563;
+  .lang {
+    width: 300px;
   }
 
   .flex-tool {
@@ -650,10 +645,6 @@ input[type="text"]:focus {
     justify-content: center;
   }
 
-  .ab-li {
-    padding: 0;
-  }
-
   .ab-btn {
     background: #fff;
     color: #36b37e;
@@ -661,6 +652,44 @@ input[type="text"]:focus {
     padding-left: 15px;
     padding-right: 10px;
     padding-top: 10px;
+  }
+
+  .flex-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .test {
+    width: 270px;
+    height: 350px;
+    color: #36b37e;
+    margin: 10px;
+    border-radius: 8px 8px 8px 8px;
+    background: #ebf0ee;
+  }
+
+  .ab-img {
+    margin-top: 10px;
+  }
+
+  .lang-btn {
+    color: #36b37e;
+    height: 30px;
+    background: #ffff;
+    margin-left: 10px;
+    border-radius: 6px 6px 6px 6px;
+    margin-bottom: 5px;
+    border: none;
+  }
+
+  .btn-pad {
+    padding: 0;
+    list-style: none;
+  }
+
+  .lang-name {
+    padding-left: 5px;
   }
 
   /* ******************* section Three Above *********** */
@@ -737,7 +766,6 @@ input[type="text"]:focus {
   }
 
   .footer {
-    display: flex;
     height: 10px;
   }
 
@@ -750,15 +778,13 @@ input[type="text"]:focus {
   }
 
   .ab-soc {
-    font-size: 20px;
-    margin-right: 40px;
-    color: #42526e;
+    font-size: 25px;
+    gap: 10px;
   }
 
   .ab-mail {
     text-align: center;
     font-size: 20px;
     color: #42526e;
-    margin-bottom: 400px;
   }
 }
