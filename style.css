@@ -336,7 +336,6 @@ input[type="text"]:focus {
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    margin: auto;
     gap: 20px;
   }
 
