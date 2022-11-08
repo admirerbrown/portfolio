@@ -9,7 +9,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-
     <title>portfolio site</title>
   </head>
 
@@ -21,7 +20,6 @@
         <a><i class="fa-solid fa-bars"></i></a>
       </div>
     </header>
-
     <section class="headline">
       <div class="headline-image">
         <div class="desktop-nav">
@@ -79,10 +77,12 @@
     <section class="call">
       <div id="recent-works">
         <div class="section-tag">
-          <h1 class="section-title">My Recent Works</h1>
+          <h1 class="section-title">
+            My Recent<br class="hand-brake" />
+            Works
+          </h1>
           <a><img src="images/Indicator.svg" alt="Indicator" /></a>
         </div>
-
         <div class="high-container">
           <div class="grid-container">
             <div class="card-flex">
@@ -105,7 +105,6 @@
                 </div>
               </div>
             </div>
-
             <div class="card-flex">
               <div class="description">
                 <h2 class="new">Multi-Post Stories Gain+Glory</h2>
@@ -126,7 +125,6 @@
                 </div>
               </div>
             </div>
-
             <div class="card-flex">
               <div class="description">
                 <h2 class="new">Multi-Post Stories Gain+Glory</h2>
@@ -147,7 +145,6 @@
                 </div>
               </div>
             </div>
-
             <div class="card-flex">
               <div class="description">
                 <h2 class="new">Multi-Post Stories Gain+Glory</h2>
@@ -212,19 +209,9 @@
         </div>
       </div>
     </section>
-
     <!-- recent About-me section -->
     <section id="about-me">
       <div class="about">
-        <div class="about-li">
-          <img class="mob-img" src="images/Frame-1.svg" alt="side-image" />
-          <img
-            class="side2 lap-img"
-            src="images/illustration-about-me-2-desktop.svg"
-            alt="side-image"
-          />
-        </div>
-
         <div class="about-li">
           <h1 class="ab-head">About me</h1>
           <p class="ab-text">
@@ -233,175 +220,120 @@
             project you need coded, don’t hesitate to contact me.
           </p>
           <div class="ab-btn-align">
-            <button class="resume" type="button">Get my Resume</button>
+            <button class="btn" type="button">Get my Resume</button>
           </div>
         </div>
-        <a
-          ><img class="side1 mob-img" src="images/side.svg" alt="side-image"
-        /></a>
-        <a
-          ><img class="side1 lap-img" src="images/Frame.svg" alt="side-image"
-        /></a>
       </div>
-
       <div class="container">
         <div class="flex-con">
           <div class="test">
             <img class="ab-img" src="images/Icons1.svg" alt="side-image" />
             <h2 class="ab-title new">Languages</h2>
             <ul class="btn-pad p-lang flex-tool ab-li">
-              <li>
-                <button class="lang-li lang-btn" type="button">
-                  Javascript
-                </button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Ruby</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Html</button>
-              </li>
-              <li><button class="lang-btn" type="button">Css</button></li>
+              <li>javaScript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
             </ul>
           </div>
           <div class="test">
             <img class="ab-img" src="images/lang2.svg" alt="side-image" />
             <h2 class="ab-title new">Frameworks</h2>
             <ul class="btn-pad flex-tool ab-li">
-              <li>
-                <button class="lang-btn" type="button">Bootstrap</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Ruby on rails</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">RSpec</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Capybara</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Selenium</button>
-              </li>
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>Rspec</li>
+              <li>Capybara</li>
+              <li>Selenium</li>
             </ul>
           </div>
           <div class="test">
             <img class="ab-img" src="images/lang2.svg" alt="side-image" />
             <h2 class="ab-title new">Skills</h2>
             <ul class="flex-tool ab-li btn-pad">
-              <li>
-                <button class="lang-btn" type="button">CodeKit</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Github</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Codepen</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Gitlab</button>
-              </li>
-              <li>
-                <button class="lang-btn" type="button">Terminal</button>
-              </li>
+              <li>CodeKit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-
     <!-- contact me section -->
     <section id="abt-contact">
-      <div class="contact-me">
-        <div class="contact-sec">
-          <div class="close">
-            <p class="closure">
-              I'm always interested in hearing about new projects, so if you'd
-              like to chat please get in touch.
-            </p>
+      <div class="contact-sec">
+        <div class="close">
+          <p class="closure">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
+        </div>
+        <form
+          class="ab-form"
+          action="https://formspree.io/f/mwkzwepq"
+          method="POST"
+        >
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          /><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            required
+          /><br />
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Enter text here"
+            maxlength="500"
+            required
+          ></textarea>
+          <div class="">
+            <input
+              class="send"
+              type="submit"
+              id="submit"
+              name="Get in Touch"
+              value="Get in touch"
+            /><br />
           </div>
-
-          <form
-            class="ab-form"
-            action="https://formspree.io/f/mwkzwepq"
-            method="POST"
-          >
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="Full name"
-              maxlength="30"
-              required
-            /><br />
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email address"
-              required
-            /><br />
-
-            <textarea
-              id="comments"
-              name="comments"
-              placeholder="Enter text here"
-              maxlength="500"
-              required
-            ></textarea>
-
-            <div class="">
-              <input
-                class="send"
-                type="submit"
-                id="submit"
-                name="Get in Touch"
-                value="Get in touch"
-              /><br />
-              <a><img class="mob-footer-img" src="images/frames2.svg" /></a>
-            </div>
-          </form>
-        </div>
+        </form>
       </div>
-
-      <div class="desk-img">
-        <div class="left-side">
-          <a><img class="" src="images/des-footer-img1.svg" /></a>
-          <a><img class="" src="images/des-footer-img2.svg" /></a>
-        </div>
-        <div class="left-img">
-          <a><img class="left-img" src="images/des-footer-img.svg" /></a>
-        </div>
-      </div>
-
-      <footer>
-        <hr />
-        <div class="end-notes ab-soc">
-          <ul class="ab-soc list">
-            <li class="intro-contact">
-              <a href="https://github.com/admirerbrown/portfolio"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li class="intro-contact">
-              <a href="http://www.linkedin.com/in/samuel-ntow-kyere-5036741b4"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li class="intro-contact">
-              <a href="https://twitter.com/brown_admirer"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </li>
-
-            <li class="intro-contact">
-              <a><img class="med-icon" src="images/Icon - Angelist.svg" /></a>
-            </li>
-          </ul>
-        </div>
-        <a class="ab-mail">mr.kyere@gmail.com </a>
-      </footer>
     </section>
+    <footer>
+      <hr class="footer-line" />
+      <div class="end-notes ab-soc">
+        <ul class="ab-soc list">
+          <li class="intro-contact">
+            <a href="https://github.com/admirerbrown/portfolio"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li class="intro-contact">
+            <a href="http://www.linkedin.com/in/samuel-ntow-kyere-5036741b4"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="intro-contact">
+            <a href="https://twitter.com/brown_admirer"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="intro-contact">
+            <a><img class="med-icon" src="images/Icon - Angelist.svg" /></a>
+          </li>
+        </ul>
+      </div>
+      <a class="ab-mail">mr.kyere@gmail.com </a>
+    </footer>
   </body>
 </html>
