@@ -432,13 +432,15 @@ input[type="submit"] {
   justify-content: center;
   font-size: 20px;
   color: #42526e;
-  padding-bottom:10px ;
+  padding-bottom: 10px;
 }
+
 .footer-line {
   display: none;
 }
-footer{
-  margin-top:170px;
+
+footer {
+  margin-top: 170px;
 }
 
 /* *************** desktop version *************** */
@@ -447,9 +449,7 @@ footer{
   .body {
     font-family: "Inter", sans-serif;
     font-style: normal;
-    /* height: auto; */
     height: 0;
-    /* width: 100%; */
   }
 
   .headline-image {
@@ -781,11 +781,6 @@ footer{
     margin-top: 30px;
   }
 
-  /* .footer {
-    display: flex;
-    height: 0;
-  } */
-
   .send {
     height: 50px;
     width: 128px;
@@ -798,19 +793,22 @@ footer{
     padding-top: 14px;
     padding-left: 13px;
   }
+
   #abt-contact {
     background-image: url(images/Desktop-4.svg);
   }
 
   .footer-line {
-    display:block;
+    display: block;
   }
-  footer{
+
+  footer {
     display: grid;
     grid-template-columns: 1.0fr;
     row-gap: -50px;
-    justify-content:center;
+    justify-content: center;
   }
+
   .desk-img {
     display: flex;
     justify-content: space-between;
