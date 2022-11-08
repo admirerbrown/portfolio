@@ -10,6 +10,9 @@ A personal portfolio site of to showcase my skills and what i am capable of to p
 
 - Html, Css
 
+## Live Demo
+["click here"](https://admirerbrown.github.io/portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
