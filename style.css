@@ -625,8 +625,8 @@ input[type="email"]:focus {
     margin-top: 100px;
     display: flex;
     background-image: 
-       url(images/illustration-about-me-2-desktop.svg),
-       url(images/Frame.svg);
+        url(images/illustration-about-me-2-desktop.svg),
+        url(images/Frame.svg);
   }
 
   .side1 {
