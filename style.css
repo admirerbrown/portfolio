@@ -7,52 +7,6 @@
   font-family: "Inter", sans-serif;
 }
 
-/* ************************* Animations **************** */
-textarea:focus {
-  outline: none;
-  outline-color: #36b37e;
-  border: 2px solid #36b37e;
-}
-
-input[type="text"]:focus {
-  outline: none;
-  border: 2px solid #36b37e;
-}
-
-input[type="email"]:focus {
-  outline: none;
-  border: 2px solid #36b37e;
-}
-
-.send:active {
-  background: #008552;
-}
-
-.resume:active {
-  background: #36b37e;
-  transform: scale(1.2);
-  transition-duration: 2s;
-  opacity: 100%;
-}
-
-.send:hover {
-  background: #36b37e;
-  transform: scale(1.2);
-  transition-duration: 2s;
-  opacity: 100%;
-}
-
-.btn:hover {
-  background: #36b37e;
-  transform: scale(1.2);
-  transition-duration: 2s;
-  opacity: 100%;
-}
-
-.btn:active {
-  background: #008552;
-}
-
 /* ****** -----------Mobile version -----------********* */
 .desktop-nav {
   display: none;
@@ -443,6 +397,52 @@ footer {
   margin-top: 170px;
 }
 
+/* ************************* Animations **************** */
+textarea:focus {
+  outline: none;
+  outline-color: #36b37e;
+  border: 2px solid #36b37e;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #36b37e;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border: 2px solid #36b37e;
+}
+
+.send:active {
+  background: #008552;
+}
+
+.resume:active {
+  background: #36b37e;
+  transform: scale(1.2);
+  transition-duration: 2s;
+  opacity: 100%;
+}
+
+.send:hover {
+  background: #36b37e;
+  transform: scale(1.2);
+  transition-duration: 2s;
+  opacity: 100%;
+}
+
+.btn:hover {
+  background: #36b37e;
+  transform: scale(1.2);
+  transition-duration: 2s;
+  opacity: 100%;
+}
+
+.btn:active {
+  background: #008552;
+}
+
 /* *************** desktop version *************** */
 
 @media (min-width: 768px) {
@@ -804,8 +804,8 @@ footer {
 
   footer {
     display: grid;
-    grid-template-columns: 1.0fr;
-    row-gap: -50px;
+    grid-template-columns: 1fr;
+    row-gap: -50;
     justify-content: center;
   }
 
