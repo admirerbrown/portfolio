@@ -9,7 +9,20 @@
 
 /* ****** -----------Mobile version -----------********* */
 .desktop-nav {
+  /* flex-direction: column; */
   display: none;
+}
+
+.fa-xmark {
+  display: none;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  text-decoration: none;
+  font-size: 32px;
 }
 
 .lap-img {
@@ -24,6 +37,7 @@
   background-image: url(images/header-illsutration-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 #body {
@@ -42,6 +56,8 @@
   padding-right: 30px;
   padding-bottom: 30px;
   padding-top: 15px;
+
+  /* height: 24px; */
 }
 
 .prologue {
@@ -456,6 +472,10 @@ input[type="email"]:focus {
     height: 0;
   }
 
+  .page-content {
+    visibility: show;
+  }
+
   .headline-image {
     background-image: url(images/Header-llustration-desktop.svg);
     background-size: contain;
@@ -481,10 +501,12 @@ input[type="email"]:focus {
   }
 
   .nav-item {
+    display: flex;
     padding-left: 1em;
     text-decoration: none;
     color: #344563;
     font-size: 16px;
+    flex-direction: row;
   }
 
   .headline-title {
@@ -628,7 +650,9 @@ input[type="email"]:focus {
   .about {
     margin-top: 100px;
     display: flex;
-    background-image: url(images/illustration-about-me-2-desktop.svg), url(images/Frame.svg);
+    background-image:
+      url(images/illustration-about-me-2-desktop.svg),
+      url(images/Frame.svg);
   }
 
   .side1 {
