@@ -1,8 +1,8 @@
 // alert('welcome');
 const expand = document.querySelector(".fa-bars").addEventListener("click", expandNav);
-const collapse = document.querySelector(".fa-xmark").addEventListener("click", toggleNav);
+const collapse = document.querySelector(".mark").addEventListener("click", toggleNav);
 const hamIcon = document.querySelector(".fa-bars");
-const closeIcon = document.querySelector(".fa-xmark");
+const closeIcon = document.querySelector(".mark");
 const showPage = document.querySelectorAll(".nav-item").length;
 
 function expandNav() {

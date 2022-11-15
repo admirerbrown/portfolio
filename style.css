@@ -13,7 +13,7 @@
   display: none;
 }
 
-.fa-xmark {
+.mark {
   display: none;
 }
 
@@ -35,7 +35,7 @@
 
 .headline-image {
   background-image: url(images/header-illsutration-mobile.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -50,6 +50,7 @@
 .mobile-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 22px;
   color: #28352f;
   padding-left: 26px;
