@@ -12,6 +12,20 @@
   display: none;
 }
 
+.mark {
+  display: none;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600px;
+  color: #3a4a42;
+}
+
 .lap-img {
   display: none;
 }
@@ -22,8 +36,9 @@
 
 .headline-image {
   background-image: url(images/header-illsutration-mobile.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 #body {
@@ -36,6 +51,7 @@
 .mobile-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 22px;
   color: #28352f;
   padding-left: 26px;
@@ -456,6 +472,10 @@ input[type="email"]:focus {
     height: 0;
   }
 
+  .page-content {
+    visibility: show;
+  }
+
   .headline-image {
     background-image: url(images/Header-llustration-desktop.svg);
     background-size: contain;
@@ -481,10 +501,12 @@ input[type="email"]:focus {
   }
 
   .nav-item {
+    display: flex;
     padding-left: 1em;
     text-decoration: none;
     color: #344563;
     font-size: 16px;
+    flex-direction: row;
   }
 
   .headline-title {
