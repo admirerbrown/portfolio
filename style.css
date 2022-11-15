@@ -9,7 +9,6 @@
 
 /* ****** -----------Mobile version -----------********* */
 .desktop-nav {
-  /* flex-direction: column; */
   display: none;
 }
 
@@ -23,6 +22,8 @@
   margin: 25px;
   text-decoration: none;
   font-size: 32px;
+  font-weight: 600px;
+  color: #3a4a42;
 }
 
 .lap-img {

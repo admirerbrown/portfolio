@@ -8,6 +8,7 @@ const showPage = document.querySelectorAll(".nav-item").length;
 function expandNav() {
     hamIcon.style.display = "none";
     closeIcon.style.display = "block";
+    closeIcon.style.color = "#67798e";
     document.querySelector(".page-content").style.visibility = "hidden";
     document.querySelectorAll("a ")[0].style.visibility = "hidden";
     document.querySelector(".desktop-nav").style.display = "block";
@@ -16,6 +17,7 @@ function expandNav() {
 function toggleNav() {
     hamIcon.style.display = "block";
     closeIcon.style.display = "none";
+    closeIcon.style.color = "#67798e";
     document.querySelector(".page-content").style.visibility = "visible";
     document.querySelectorAll("a ")[0].style.visibility = "visible";
     document.querySelector(".desktop-nav").style.display = "none";
@@ -28,5 +30,6 @@ for (let i = 0; i < showPage; i++) {
         document.querySelector(".desktop-nav").style.display = "none";
         hamIcon.style.display = "block";
         closeIcon.style.display = "none";
+        
     });
 }
