@@ -21,3 +21,12 @@ function toggleNav() {
     document.querySelector(".desktop-nav").style.display = "none";
 }
 
+for (let i = 0; i < showPage; i++) {
+    document.querySelectorAll(".nav-item")[i].addEventListener("click", () => {
+        document.querySelector(".page-content").style.visibility = "visible";
+        document.querySelectorAll("a ")[0].style.visibility = "visible";
+        document.querySelector(".desktop-nav").style.display = "none";
+        hamIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    });
+}
