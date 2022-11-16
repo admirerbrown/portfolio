@@ -122,6 +122,7 @@ a {
   display: grid;
   gap: 16px;
   margin: 20px 25px;
+  /* filter: blur(8px); */
 }
 
 .grid-items {
@@ -134,7 +135,6 @@ a {
 
 .card-flex {
   height: 474px;
-  background-color: #ebf0ee;
   border: #cfd0d1 solid 1px;
   border-radius: 8px;
 }
@@ -145,12 +145,18 @@ a {
   align-items: center;
 }
 
+.project-image {
+  height: 60%;
+  background: url(images/project_image.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+}
+
 .description {
-  height: 225px;
-  margin-top: 249px;
+  height: 40%;
   border-radius: 8px;
   border-bottom: #cfd0d1 solid 1px;
-  background: #fff;
 }
 
 .new {
@@ -188,6 +194,50 @@ a {
   color: #fff;
   font-size: 19px;
   padding: 15px;
+}
+
+
+#mobile-popUp {
+  display: none;
+  width: 375px;
+  height: 836px;
+  position: absolute;
+  background-color: goldenrod;
+  border: 1px solid #ccc;
+  margin: auto;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.proj-img {
+  height: 220px;
+  width: 311px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: url(images/projimg.png);
+  margin: 25px;
+}
+
+.proj-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 25px;
+}
+
+.badges {
+  display: flex;
+  margin: 25px;
+}
+
+.proj-detail {
+  width: 311px;
+  /* height: 313px; */
+  font-size: 16px;
+  line-height: 24px;
+  margin: 25px;
 }
 
 /* ******************* section Two Above *********** */
@@ -441,21 +491,21 @@ input[type="email"]:focus {
 .resume:active {
   background: #36b37e;
   transform: scale(1.2);
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   opacity: 100%;
 }
 
 .send:hover {
   background: #36b37e;
   transform: scale(1.2);
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   opacity: 100%;
 }
 
 .btn:hover {
   background: #36b37e;
   transform: scale(1.2);
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   opacity: 100%;
 }
 
@@ -581,10 +631,12 @@ input[type="email"]:focus {
     border-radius: 8px;
   }
 
+  .project-image {
+    height: 55%;
+  }
+
   .description {
-    height: 225px;
-    margin-top: 249px;
-    border-radius: 8px;
+    height: 45%;
     background: #fff;
   }
 
@@ -650,7 +702,8 @@ input[type="email"]:focus {
   .about {
     margin-top: 100px;
     display: flex;
-    background-image: url(images/illustration-about-me-2-desktop.svg), url(images/Frame.svg);
+    background-image: url(images/illustration-about-me-2-desktop.svg),
+      url(images/Frame.svg);
   }
 
   .side1 {
@@ -847,6 +900,10 @@ input[type="email"]:focus {
   }
 
   .ab-mail {
+    display: none;
+  }
+
+  #mobile-popUp {
     display: none;
   }
 }

@@ -15,13 +15,14 @@
   <body id="body">
     <!-- toolbar and headline section -->
     <header id="tool-bar">
-      <div class="mobile-nav ">
+      <div class="mobile-nav">
         <a class="nav-title"><strong>Welcome</strong></a>
         <a><i class="fa-solid fa-bars fa"></i></a>
-        <div class="mark"><a><i class="fa-sharp fa-solid fa-xmark"></i></a></div>
-        
+        <div class="mark">
+          <a><i class="fa-sharp fa-solid fa-xmark"></i></a>
+        </div>
       </div>
-      <div class="desktop-nav ">
+      <div class="desktop-nav">
         <a href="#portfolio" class="nav-item">Portfolio</a>
         <a href="#about-me" class="nav-item">About</a>
         <a href="#abt-contact" class="nav-item">Contact</a>
@@ -30,12 +31,6 @@
     <section class="page-content">
       <section class="headline">
         <div class="headline-image">
-          <!-- <div class="desktop-nav toogle-menu">
-                <a href="" class="nav-item">Portfolio</a>
-                <a href="" class="nav-item">About</a>
-                <a href="" class="nav-item">Contact</a>
-            </div> -->
-
           <div class="prologue">
             <div class="banner">
               <h1 class="headline-title">
@@ -97,9 +92,55 @@
             </h1>
             <a><img src="images/Indicator.svg" alt="Indicator" /></a>
           </div>
+
+          <div id="mobile-popUp">
+            <div class="proj-img">
+              <a><i class="fa-sharp fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="proj-title">
+              Keeping track of hundreds of components
+            </div>
+            <div class="proj-badges">
+              <ul class="list badges">
+                <li>
+                  <button class="btn-btn" type="button">Ruby on rails</button>
+                </li>
+                <li><button class="btn-btn" type="button">Css</button></li>
+                <li>
+                  <button class="btn-btn" type="button">Javascript</button>
+                </li>
+                <li><button class="btn-btn" type="button">Html</button></li>
+              </ul>
+            </div>
+            <div class="proj-detail">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam voluptates incidunt asperiores exercitationem
+                obcaecati ipsam esse nesciunt nam fugiat commodi, alias, ab
+                dolor veniam repellendus quae adipisci quod facere soluta.
+              </p>
+            </div>
+            <div class="proj-links">
+              <button class="source">
+                See Live
+                <a href="https://github.com/admirerbrown/portfolio"
+                  ><img src="/images/btn_icon.svg" alt="link to demo"
+                /></a>
+              </button>
+              <button class="live">
+                See Source
+                <a href="https://github.com/admirerbrown/portfolio">
+                  <img src="images/Icon -GitHub.svg" alt="link to Source"/>
+                </a>
+              </button>
+            </div>
+          </div>
+
           <div class="high-container">
             <div class="grid-container">
               <div class="card-flex">
+                <div class="project-image">
+                </div>
                 <div class="description">
                   <h2 class="new">Multi-Post Stories Gain+Glory</h2>
                   <ul class="list p-lang">
@@ -119,6 +160,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-flex">
                 <div class="description">
                   <h2 class="new">Multi-Post Stories Gain+Glory</h2>
@@ -141,6 +183,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- delete from here... -->
               <div class="card-flex">
                 <div class="description">
                   <h2 class="new">Multi-Post Stories Gain+Glory</h2>
@@ -232,6 +276,8 @@
             </div>
           </div>
         </div>
+
+        <div id="desktop-popUp"></div>
       </section>
       <!-- recent About-me section -->
       <section id="about-me">
@@ -388,5 +434,6 @@
     </section>
 
     <script src="/index.js" crossorigin="anonymous"></script>
+    <script src="/modal_popup.js" crossorigin="anonymous"></script>
   </body>
 </html>
