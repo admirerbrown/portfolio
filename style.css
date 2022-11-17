@@ -134,7 +134,6 @@ a {
 
 .card-flex {
   height: 474px;
-  background-color: #ebf0ee;
   border: #cfd0d1 solid 1px;
   border-radius: 8px;
 }
@@ -145,12 +144,18 @@ a {
   align-items: center;
 }
 
+.project-image {
+  height: 60%;
+  background: url(images/project_image.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+}
+
 .description {
-  height: 225px;
-  margin-top: 249px;
+  height: 40%;
   border-radius: 8px;
   border-bottom: #cfd0d1 solid 1px;
-  background: #fff;
 }
 
 .new {
@@ -176,6 +181,7 @@ a {
   color: #3a4a42;
   background: #ebf0ee;
   border: none;
+  padding: 8px;
 }
 
 .btn {
@@ -189,6 +195,90 @@ a {
   font-size: 19px;
   padding: 15px;
 }
+
+/* mobile modal section */
+
+#overlay {
+  display: flex;
+  width: 100%;
+  height: 882px;
+  height: 100vh;
+  margin: auto;
+  position: fixed;
+  overscroll-behavior: contain;
+  overflow: auto;
+  z-index: 100;
+  top: 0;
+  animation: ease-in-out 1s;
+  backdrop-filter: blur(20px);
+}
+
+.modal-card {
+  width: 343px;
+  height: 836px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin: auto;
+  position: relative;
+}
+
+.modal-img {
+  display: flex;
+  width: 311px;
+  height: 220px;
+  background: url(images/projimg.png);
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 15px;
+  transition: all 1s;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.modal-header .modal-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.mod-badge {
+  justify-content: flex-start;
+}
+
+.modal-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 311px;
+  height: 313px;
+  margin-top: 10px;
+}
+
+.modal-buttons {
+  gap: 15px;
+}
+
+.collapse-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 21px;
+  margin-top: 30px;
+  padding-left: 20px;
+  position: absolute;
+  right: 37px;
+}
+
+.default {
+  color: #fff;
+}
+
+/* modal ends here.. */
 
 /* ******************* section Two Above *********** */
 
@@ -441,21 +531,21 @@ input[type="email"]:focus {
 .resume:active {
   background: #36b37e;
   transform: scale(1.2);
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   opacity: 100%;
 }
 
 .send:hover {
   background: #36b37e;
   transform: scale(1.2);
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   opacity: 100%;
 }
 
 .btn:hover {
   background: #36b37e;
   transform: scale(1.2);
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   opacity: 100%;
 }
 
@@ -581,10 +671,12 @@ input[type="email"]:focus {
     border-radius: 8px;
   }
 
+  .project-image {
+    height: 55%;
+  }
+
   .description {
-    height: 225px;
-    margin-top: 249px;
-    border-radius: 8px;
+    height: 45%;
     background: #fff;
   }
 
@@ -603,10 +695,10 @@ input[type="email"]:focus {
   }
 
   .btn-btn {
+    width: auto;
     height: 35px;
     font-size: 15px;
     border-radius: 4px;
-    margin: 3px;
     margin-top: 10px;
     color: #3a4a42;
     background: #ebf0ee;
@@ -849,4 +941,78 @@ input[type="email"]:focus {
   .ab-mail {
     display: none;
   }
+
+  /* desktop modal section */
+  .overlay {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(193, 199, 208, 0.5);
+  }
+
+  .modal-card {
+    width: 920px;
+    height: 900px;
+  }
+
+  .modal-img {
+    display: flex;
+    width: 872px;
+    height: 500px;
+    margin-top: 50px;
+    background: url(images/project_image.svg);
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 872px;
+    height: 0%;
+    position: relative;
+  }
+
+  .modal-header .modal-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    width: 55%;
+  }
+
+  .mod-badge {
+    justify-content: flex-start;
+  }
+
+  .modal-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    gap: 15px;
+    height: 89px;
+    right: 50px;
+  }
+
+  .collapse-modal {
+    width: 40px;
+    height: 40px;
+    background: #ebecf0;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .default {
+    color: #67798e;
+    margin: 12px;
+  }
+
+  /* modal ends here.. */
 }
