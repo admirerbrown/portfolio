@@ -1,4 +1,3 @@
-// const viewProject = document.querySelectorAll(".btn").length;
 const myWorks = [
   {
     image: 'images/project_image.svg',
