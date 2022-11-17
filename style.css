@@ -122,7 +122,6 @@ a {
   display: grid;
   gap: 16px;
   margin: 20px 25px;
-  /* filter: blur(8px); */
 }
 
 .grid-items {
@@ -196,49 +195,74 @@ a {
   padding: 15px;
 }
 
-
-#mobile-popUp {
-  display: none;
-  width: 375px;
-  height: 836px;
-  position: absolute;
-  background-color: goldenrod;
-  border: 1px solid #ccc;
+/* mobile modal section */
+#overlay {
+  /* display: none; */
+  display: flex;
+  width: 100%;
+  height: 882px;
+  height: 100vh;
+  background: #c1c7d0;
   margin: auto;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  overflow: hidden;
+  position: fixed;
+  overscroll-behavior: contain;
+  overflow: auto;
+  z-index: 100;
+  top: 0;
+  animation: ease-in-out 1s;
 }
 
-.proj-img {
-  height: 220px;
+.modal-card {
+  width: 343px;
+  height: 836px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.modal-img {
+  display: flex;
   width: 311px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  height: 220px;
   background: url(images/projimg.png);
-  margin: 25px;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 15px;
+  transition: all 1s;
 }
 
-.proj-title {
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.modal-header .modal-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  margin: 25px;
 }
 
-.badges {
-  display: flex;
-  margin: 25px;
+.mod-badge {
+  justify-content: flex-start;
 }
 
-.proj-detail {
-  width: 311px;
-  /* height: 313px; */
+.modal-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin: 25px;
+  width: 311px;
+  height: 313px;
+  margin-top: 10px;
 }
+
+.modal-buttons {
+  /* display: flex; */
+  gap: 15px;
+}
+
+/* modal ends here.. */
 
 /* ******************* section Two Above *********** */
 
@@ -702,8 +726,7 @@ input[type="email"]:focus {
   .about {
     margin-top: 100px;
     display: flex;
-    background-image: url(images/illustration-about-me-2-desktop.svg),
-      url(images/Frame.svg);
+    background-image: url(images/illustration-about-me-2-desktop.svg), url(images/Frame.svg);
   }
 
   .side1 {
@@ -903,7 +926,57 @@ input[type="email"]:focus {
     display: none;
   }
 
-  #mobile-popUp {
-    display: none;
+  /* desktop modal section */
+  .modal-card {
+    width: 920px;
+    height: 900px;
   }
+
+  .modal-img {
+    display: flex;
+    width: 872px;
+    height: 500px;
+    margin-top: 50px;
+    background: url(images/project_image.svg);
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 872px;
+    height: 0%;
+    position: relative;
+  }
+
+  .modal-header .modal-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    width: 55%;
+  }
+
+  .mod-badge {
+    justify-content: flex-start;
+  }
+
+  .modal-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    gap: 15px;
+    height: 89px;
+    right: 50px;
+  }
+
+  /* modal ends here.. */
 }
