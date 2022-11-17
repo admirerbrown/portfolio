@@ -278,6 +278,10 @@ a {
   color: #fff;
 }
 
+.error-msg {
+  color: red;
+}
+
 /* modal ends here.. */
 
 /* ******************* section Two Above *********** */
