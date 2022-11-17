@@ -181,6 +181,7 @@ a {
   color: #3a4a42;
   background: #ebf0ee;
   border: none;
+  padding: 8px;
 }
 
 .btn {
@@ -694,10 +695,10 @@ input[type="email"]:focus {
   }
 
   .btn-btn {
+    width: auto;
     height: 35px;
     font-size: 15px;
     border-radius: 4px;
-    margin: 3px;
     margin-top: 10px;
     color: #3a4a42;
     background: #ebf0ee;
