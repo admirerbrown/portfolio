@@ -1,3 +1,4 @@
+//  validate form email input
 const email = document.querySelector('#email');
 const form = document.querySelector('#form');
 const errorMsg = document.querySelector('.error-msg');
@@ -10,3 +11,19 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// store form data to localStorage
+form.addEventListener('input', () => {
+  const userData = {
+    fullname: document.querySelector('#fname').value,
+    email: document.querySelector('#email').value,
+    comment: document.querySelector('#comments').value,
+  };
+  localStorage.setItem('formData', JSON.stringify(userData));
+});
+
+// pre fill user form details from localStorage
+const getUserFormInput = JSON.parse(localStorage.getItem('formData'));
+document.querySelector('#fname').value = getUserFormInput.fullname;
+document.querySelector('#email').value = getUserFormInput.email;
+document.querySelector('#comments').value = getUserFormInput.comment;
