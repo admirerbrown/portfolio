@@ -24,6 +24,6 @@ form.addEventListener('input', () => {
 
 // pre fill user form details from localStorage
 const getUserFormInput = JSON.parse(localStorage.getItem('formData'));
-document.querySelector('#fname').value = getUserFormInput.fullname;
-document.querySelector('#email').value = getUserFormInput.email;
+document.querySelector('#fname').value = getUserFormInput.fullname
+document.querySelector('#email').value = getUserFormInput.email
 document.querySelector('#comments').value = getUserFormInput.comment;
