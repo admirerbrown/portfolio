@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/admirerbrown/portfolio/issues"
+    "url": "https://admirerbrown.github.io/portfolio/"
   },
-  "homepage": "https://github.com/admirerbrown/portfolio#readme",
+  "homepage": "https://admirerbrown.github.io/portfolio/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",

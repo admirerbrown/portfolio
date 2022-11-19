@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
 // store form data to localStorage
 form.addEventListener('input', () => {
   const userData = {
-    fullname: document.querySelector('#fname').value,
+    fname: document.querySelector('#fname').value,
     email: document.querySelector('#email').value,
     comment: document.querySelector('#comments').value,
   };
@@ -24,6 +24,8 @@ form.addEventListener('input', () => {
 
 // pre fill user form details from localStorage
 const getUserFormInput = JSON.parse(localStorage.getItem('formData'));
-document.querySelector('#fname').value = getUserFormInput.fullname;
-document.querySelector('#email').value = getUserFormInput.email;
-document.querySelector('#comments').value = getUserFormInput.comment;
+if (getUserFormInput != null) {
+  document.querySelector('#fname').value = getUserFormInput.fname;
+  document.querySelector('#email').value = getUserFormInput.email;
+  document.querySelector('#comments').value = getUserFormInput.comment;
+}
